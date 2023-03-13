@@ -1,2 +1,2 @@
 #!/bin/bash
-tr 'A' 'Z' | tr 'c' 'e'
+cat /etc/ssh/sshd_config | tr -c '[:alpha:]\n' ' ' | tr ' ' '\n'
