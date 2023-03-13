@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /etc/ssh/sshd_config | tr -c '[:alpha:]\n' ' ' | tr ' ' '\n'
+grep '[a-zA-Z]\s' "/etc/ssh/sshd_config"
