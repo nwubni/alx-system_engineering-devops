@@ -1,2 +1,2 @@
 #!/bin/bash
-for f in "$@"; do a=""; while read -r l; do a+="${l:0:1}"; done < "$f"; echo "$a"; done && echo
+cut -c1 | paste -s | tr -d "[:blank:]"
