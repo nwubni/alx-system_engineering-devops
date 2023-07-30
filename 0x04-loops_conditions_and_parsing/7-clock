@@ -4,8 +4,12 @@
 hour=0
 minute=1
 
-for ((hour = 0; hour <= 12; hour++)); do
-    for ((minute = 1; minute <= 59; minute++)); do
-        printf "%02d:%02d\n" "$hour" "$minute"
+while [ $hour -le 12 ]; do
+    echo "Hour: $hour"
+    while [ $minute -le 59 ]; do
+        echo "$minute"
+        ((minute++))
     done
+    ((hour++))
+    minute=1
 done | head -n 70
