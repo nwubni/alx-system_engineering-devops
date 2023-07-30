@@ -14,9 +14,6 @@ while [ $count -le 20 ]; do
         17)
             echo "bad luck from Italy"
             ;;
-        *)
-            echo $count
-            ;;
     esac
     ((count++))
 done
