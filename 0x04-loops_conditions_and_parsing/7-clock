@@ -4,11 +4,8 @@
 hour=0
 minute=1
 
-while [ $hour -le 12 ]; do
-    while [ $minute -le 59 ]; do
+for ((hour = 0; hour <= 12; hour++)); do
+    for ((minute = 1; minute <= 59; minute++)); do
         printf "%02d:%02d\n" "$hour" "$minute"
-        ((minute++))
     done
-    ((hour++))
-    minute=0
 done | head -n 70
