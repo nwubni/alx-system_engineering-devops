@@ -1,12 +1,3 @@
 #!/usr/bin/env bash
 # Don't stop me now!
-pid=$$
-
-# Display the PID
-echo "The PID of this script is: $pid"
-
-# Run the loop indefinitely
-while true; do
-    echo "To infinity and beyond"
-    sleep 2
-done
+kill "$(ps -x | pgrep -f infinity_and_beyond)"
