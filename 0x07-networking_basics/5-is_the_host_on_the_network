@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Is the host on the network
+
+if [ $# -eq 0 ]; then
+  echo "Usage: $0 {IP_ADDRESS}"
+else
+  ip_address="$1"
+  ping -c 5 "$ip_address"
+fi
