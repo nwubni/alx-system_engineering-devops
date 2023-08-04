@@ -2,5 +2,5 @@
 #Change your home IP
 cp /etc/hosts ~/hosts.temp
 sed -i 's/127.*$/127.0.0.2/' ~/hosts.temp
-echo "8.8.8.8 facebook" >> ~/hosts.temp
+echo "8.8.8.8   facebook" >> ~/hosts.temp
 cp -f ~/hosts.temp /etc/hosts
