@@ -9,8 +9,8 @@ default_backend webservers
 
 backend webservers
 balance roundrobin
-server 26071-web-01 44.210.150.159:80 check
-server 26071-web-02 35.173.47.15:80 check
+server 350771-web-01 18.235.249.26:80 check
+server 350771-web-02 34.234.201.19:80 check
 "
 # Upgrade and update packages
 apt-get -y update
